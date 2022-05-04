@@ -11,6 +11,5 @@ html:   $(HTML)
 	$(OPEN) $@
 
 %.txt:	%.xml
-	xml2rfc  $< $@
+	xml2rfc --text $<
 	$(OPEN) $@
-
